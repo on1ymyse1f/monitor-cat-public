@@ -24,6 +24,16 @@ Every figure has a confidence marker:
 The source repository does not currently provide signed, notarized release
 installers. See [distribution status](#distribution-status).
 
+## Download
+
+The latest public release is [AI Monitor 0.8.3](https://github.com/on1ymyse1f/monitor-cat-public/releases/tag/v0.8.3):
+
+- macOS: `AIMonitor-macOS-Universal.dmg` for macOS 14+, Apple Silicon and Intel.
+- Windows: `AIMonitor-Windows-x64.zip` for Windows 10/11 x64.
+
+These are unsigned development builds. Read the release notes and verify the
+checksums before installing.
+
 ## macOS: build and run
 
 ```bash

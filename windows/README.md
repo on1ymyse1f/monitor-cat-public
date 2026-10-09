@@ -12,8 +12,8 @@ unknown data is `n/a`, never a made-up zero.
 
 ## Use the ZIP
 
-1. Download `AIMonitor-Windows-x64.zip` and extract the complete `AIMonitor`
-   folder.
+1. Download [`AIMonitor-Windows-x64.zip`](https://github.com/on1ymyse1f/monitor-cat-public/releases/tag/v0.8.3)
+   from the public release and extract the complete `AIMonitor` folder.
 2. Run `AIMonitor\AIMonitor.exe`.
 3. Closing the window keeps the lightweight tray monitor running. Use the tray
    menu to reopen it or quit.
@@ -63,6 +63,9 @@ full data and storage description.
 The daily PNG and HTML profile card are user-triggered exports. They contain
 usage statistics; the HTML card does not include the Windows account name.
 Review exported files before sharing them.
+
+If a release asset is unavailable, the same ZIP can be downloaded from the
+successful Windows CI run under the `AIMonitor-Windows-x64` artifact.
 
 ## Feature parity
 

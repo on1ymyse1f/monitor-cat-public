@@ -11,17 +11,17 @@ Windows 版已经开发完成，代码位于 `windows/`，包含桌面窗口、�
 
 当前仍是开发分发状态：没有 Authenticode 签名安装包，也没有在真实 Windows 设备上完成手工托盘和界面验收。下载 ZIP 后出现 SmartScreen 提示属于预期现象。
 
-## 直接使用构建产物
+## 下载并使用
 
-仓库目前没有正式 Release 安装包。获取 CI 构建产物：
+最新公开版本是 [AI Monitor 0.8.3](https://github.com/on1ymyse1f/monitor-cat-public/releases/tag/v0.8.3)。在 Release 页面下载 `AIMonitor-Windows-x64.zip`：
 
-1. 打开仓库的 **Actions** 页面。
-2. 进入 **Windows CI** 的成功运行记录。
-3. 在页面底部下载 `AIMonitor-Windows-x64` artifact。
-4. 解压完整的 `AIMonitor` 文件夹。
-5. 运行 `AIMonitor\AIMonitor.exe`。
+1. 下载 `AIMonitor-Windows-x64.zip`。
+2. 解压完整的 `AIMonitor` 文件夹。
+3. 运行 `AIMonitor\AIMonitor.exe`。
 
 不要只复制 `.exe` 文件。它是 onedir 包，需要和同目录依赖及 `Resources` 文件夹一起保留。关闭窗口后程序会继续在系统托盘运行，可以从托盘重新打开或退出。
+
+如果 Release 资产暂时不可用，也可以在仓库 **Actions → Windows CI** 的成功运行记录底部下载同名 artifact。
 
 ## 本地构建
 
