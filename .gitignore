@@ -1,0 +1,35 @@
+.build/
+.swiftpm/
+*.xcodeproj
+.DS_Store
+
+# Never commit a store. It is a complete record of when this person works, on
+# which projects by directory name, and at what cost — and this repository is
+# public. `--sync ./test.db` in the working tree is a normal thing to type.
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# The user's rate-table override and the sync agent's log, for the same reason.
+pricing.json
+unpriced-baseline.json
+*.log
+
+# Local credentials, signing material, and environment-specific configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+
+# Python/Windows packaging outputs are generated locally or by CI.
+__pycache__/
+*.py[cod]
+.venv*/
+windows/build/
+windows/dist/

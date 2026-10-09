@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible problem without sharing private usage data.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach provider logs, `aimonitor.db`, credentials, tokens, or screenshots containing usage history. Share a small synthetic example instead.
+  - type: input
+    id: version
+    attributes:
+      label: AI Monitor version
+      placeholder: "0.8.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - Windows
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: OS version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the provider and screen or command involved. Redact local paths.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized error output
+      description: Remove tokens, account identifiers, local paths, and usage values before posting.
+      render: text
+    validations:
+      required: false

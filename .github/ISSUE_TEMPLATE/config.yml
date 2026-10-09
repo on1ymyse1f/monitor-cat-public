@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/on1ymyse1f/monitor-cat/security/advisories/new
+    about: Do not post credentials, logs, or vulnerability details in a public issue.

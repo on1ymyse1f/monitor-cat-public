@@ -1,0 +1,86 @@
+"""AIMonitor Windows core public API (Python 3.11+, standard library only)."""
+
+from .collectors import (
+    CLAUDE_PROVIDER,
+    CODEX_PROVIDER,
+    KIMI_PROVIDER,
+    claude_tokens,
+    codex_tokens,
+    kimi_tokens,
+    parse_claude_event,
+    parse_claude_quota_windows,
+    parse_codex_quota_windows,
+    parse_kimi_event,
+    parse_kimi_quota_windows,
+)
+from .models import (
+    AIEvent,
+    ActivitySpan,
+    Checkpoint,
+    Confidence,
+    DashboardData,
+    LiveCounters,
+    LiveSession,
+    ModelTotals,
+    ProfileCardData,
+    QuotaWindow,
+    SyncSummary,
+    TimelineEvent,
+    TokenBreakdown,
+)
+from .paths import AIMonitorPaths
+from .quota import fetch_cursor, parse_cursor
+from .pricing import ModelRate, PricingCatalog
+from .report import (
+    dashboard_data,
+    live_data,
+    models_data,
+    profile_card_data,
+    profile_card_html,
+    snapshot_json,
+    timeline_data,
+)
+from .store import DEFAULT_SETTINGS, EventStore
+from .sync import SyncEngine
+
+__all__ = [
+    "AIEvent",
+    "AIMonitorPaths",
+    "ActivitySpan",
+    "Checkpoint",
+    "CLAUDE_PROVIDER",
+    "CODEX_PROVIDER",
+    "Confidence",
+    "DEFAULT_SETTINGS",
+    "DashboardData",
+    "EventStore",
+    "KIMI_PROVIDER",
+    "LiveCounters",
+    "LiveSession",
+    "ModelRate",
+    "ModelTotals",
+    "PricingCatalog",
+    "ProfileCardData",
+    "QuotaWindow",
+    "SyncEngine",
+    "SyncSummary",
+    "TimelineEvent",
+    "TokenBreakdown",
+    "claude_tokens",
+    "codex_tokens",
+    "dashboard_data",
+    "kimi_tokens",
+    "live_data",
+    "models_data",
+    "parse_claude_event",
+    "parse_cursor",
+    "parse_claude_quota_windows",
+    "parse_codex_quota_windows",
+    "parse_kimi_event",
+    "parse_kimi_quota_windows",
+    "fetch_cursor",
+    "profile_card_data",
+    "profile_card_html",
+    "snapshot_json",
+    "timeline_data",
+]
