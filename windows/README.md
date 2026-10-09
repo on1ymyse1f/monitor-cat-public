@@ -1,5 +1,9 @@
 # AIMonitor for Windows
 
+> Windows 版本已开发并纳入 CI：当前公开快照的 Windows 构建、打包和自检已通过。项目暂未提供签名安装包，也未把本地 CI 结果当作实体 Windows 机器上的人工界面验收。
+
+中文说明见 [README.zh-CN.md](README.zh-CN.md)。
+
 This directory contains the complete Windows implementation and its packaging.
 The application entry point is `monitor_cat.py`; reusable accounting, storage,
 quota and sync code lives under `aimonitor/`; `app.py` is the Tk desktop/tray

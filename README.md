@@ -18,7 +18,8 @@ Every figure has a confidence marker:
 - **macOS 14 or later**, Apple Silicon and Intel. The native Swift app provides
   a menu bar monitor and dashboard. Requires Swift 6 to build from source.
 - **Windows 10 or 11, x64.** The Windows app runs from a PyInstaller package.
-  See [the Windows guide](windows/README.md) for build and use instructions.
+  See the [English Windows guide](windows/README.md) or the
+  [中文 Windows 说明](windows/README.zh-CN.md) for build and use instructions.
 
 The source repository does not currently provide signed, notarized release
 installers. See [distribution status](#distribution-status).
